@@ -18,7 +18,6 @@ print(srl)
 local db = cereal.unserialize(srl)
 db["reserved"] = true
 db["username"] = "askcompu"
---db["time"] = 0
 local srl = cereal.serialize(db)
 modem.send(serveraddress,1212,"dbwrite",roomnum,srl)
 print(srl)
