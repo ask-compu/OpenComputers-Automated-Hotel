@@ -18,3 +18,11 @@ A chat upgrade. (from computronics)
 A radar upgrade. (from computronics)
 
 A wireless modem card.
+
+An inventory upgrade.
+
+A pickaxe in the tool slot.
+
+The first inventory slot should contain wood doors (whatever type of door you want placed for reserved rooms).
+
+The second inventory slot should contain iron doors (whatever type of door you want placed for vacant rooms)/.
