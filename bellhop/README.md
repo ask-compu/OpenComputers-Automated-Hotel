@@ -26,3 +26,5 @@ A pickaxe in the tool slot.
 The first inventory slot should contain wood doors (whatever type of door you want placed for reserved rooms).
 
 The second inventory slot should contain iron doors (whatever type of door you want placed for vacant rooms)/.
+
+Edit line 171 (`map:go({posNeg(13),-58,69,0})`) to change the homing coordinates, this is relative to the center of the map used to craft the navigation upgrade. The bellhop program goes to the homing location before doing anything else, all hardcoded `To` paths assume the homing location as a starting point and all hardcoded `From` paths assume the homing location as an ending point.
