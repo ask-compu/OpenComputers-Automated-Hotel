@@ -20,6 +20,7 @@ local compass = component.navigation
 local robot = require("robot")
 local robotcomp = component.robot
 local chat = component.chat
+chat.setName("Bellhop")
 local radar = component.radar
 local modem = component.modem
 local dbfile = "/var/paths.db"
