@@ -12,6 +12,6 @@ if message == "pairing client" and port == 1212 then
   file:write(srl)
   file:close()
   m.broadcast(1212, "pairing server")  
-  print(tostring(from) .. " has been stored at /etc/frontdeskaddress.cfg")
+  print(tostring(from) .. " has been stored at /etc/bellhopaddress.cfg")
   os.exit()
 end
