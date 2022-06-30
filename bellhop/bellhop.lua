@@ -187,6 +187,7 @@ local function mainLoop()
     local mm,_,addr,_,_,command,room,username = event.pull(5,"modem_message")
     --print(mm,addr,command,room,username)
     if addr == serveraddress then
+      chat.setName("Bellhop")
       if command == "reserve" then
         chat.say(username .. ", please follow me to your room.")
         commandLoop(pathsdb["To"][room],username)
