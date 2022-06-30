@@ -4,7 +4,7 @@ local timerID = nil
 local roomlist = {"A1","A2","A3","A4","A5","A6","B1","B2","B3","B4","B5","B6"}
 
 local function expireCheck()
-  currenttime = unixtime()
+  local currenttime = unixtime()
   for i,t in ipairs(roomlist) do
     event.push("database",false,t)
     local _,db = event.pull("databaseReply")
