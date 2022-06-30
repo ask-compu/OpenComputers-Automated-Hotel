@@ -219,6 +219,7 @@ local function mainLoop()
         commandLoop(pathsdb["From"][room])
         mm = false
       end
+      modem.send(serveraddress,1212,"bellhopinit")
     else
       mm = false
     end
